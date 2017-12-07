@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Örnek Mobil Uygulama</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="a.min.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        #ortali {
+            text-align: center;
+            margin: auto;
+            padding: 2% 2% 2% 2%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="ana">
+        <div data-role="header" data-position="fixed">
+            <h1>Konya Hizmetiçi Eğitim</h1>
+                <form class="ui-filterable">
+                    <input id="filterBasic-input" data-type="search" placeholder="Aranacak kelimeyi yazınız">
+                </form>
+
+        </div>
+        <div data-role="main" class="ui-content" >
+             <ul data-role="listview" data-inset="true" data-filter="true" data-input="#filterBasic-input">
+                <li><a href="#three" data-rel="dialog" data-transition="flip">Gonya Tandır Evi</a></li>
+                <li><a href="#two" data-rel="dialog" data-transition="flip">Cemo Etli Ekmek</a></li>
+                <li><a href="#four" data-rel="dialog" data-transition="flip">Ali Baba Etli Ekmek</a></li>
+            </ul>
+        <section id="1">
+            
+
+        </section>
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>4-8 Aralık 2017</h1>
+        </div>
+     </div>
+        <div data-role="page" id="two" data-theme="a">
+            <div data-role="header" data-position="fixed">
+            <h1>Konya Hizmetiçi Eğitim</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3>1. Gün</h3>
+            <p class="ortali">Cemo Etli Ekmek</p>
+            <p class="ortali">Mevlana</p>
+
+              <img src="images/20171203_200009.jpg" alt="Küflü Peynirli Kavurma" width="90%" class="ortali">
+              <img src="images/20171203_201012.jpg" alt="Küflü Peynirli Kavurma" width="90%" class="ortali">
+            </div>
+            <div data-role="footer"></div>
+        </div>
+        <div data-role="page" id="three" data-theme="a">
+            <div data-role="header" data-position="fixed">
+            <h1>Konya Hizmetiçi Eğitim</h1>
+               
+            </div>
+            <div role="main" class="ui-content">
+               <section id="3">
+                    <h3>3. Gün</h3>
+                    <p class="ortali">Gonya Tandır Evi</p>
+                    <img src="images/20171206_175701.jpg" alt="Küflü Peynirli Kavurma" width="90%" class="ortali">
+                    <img src="images/20171206_180615.jpg" alt="Küflü Peynirli Kavurma" width="90%" class="ortali">
+                    <img src="images/20171206_181149.jpg" alt="Küflü Peynirli Kavurma" width="90%" class="ortali">
+                </section>
+            </div>
+            <div data-role="footer"></div>
+        </div>
+        <div data-role="page" id="four" data-theme="a">
+            <div data-role="header" data-position="fixed">
+            <h1>Konya Hizmetiçi Eğitim</h1>      
+            </div>
+            <div role="main" class="ui-content">
+                <section id="4">
+                    <h3>4. Gün</h3>
+                    <p class="ortali">Ali Baba Etli Ekmek</p>
+            <img src="images/konya-mekanlari-ali-baba-firin-kebap.jpg" alt="Küflü Peynirli Kavurma" width="90%" class="ortali">
+                </section>
+            </div>
+            <div data-role="footer"></div>
+        </div>
+    
+    
+</body>
+    
+</html>
